@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "customclient",
+  "version": "${version}",
+  "name": "Custom Client",
+  "description": "Modular client base: event bus, module manager, combat + QoL modules.",
+  "environment": "client",
+  "entrypoints": { "client": ["com.example.client.ClientMod"] },
+  "mixins": ["customclient.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "minecraft": "1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
